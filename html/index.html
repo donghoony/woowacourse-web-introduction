@@ -29,13 +29,13 @@
             <tr>
                 <th class="music-number">#</th>
                 <th>제목 - 가수</th>
-                <th>포스터</th>
+                <th>앨범 커버</th>
                 <th>좋아하는 가사</th>
                 <th>들어보기</th>
             </tr>
             <tr>
                 <td>1</td>
-                <td class="title-artist">여름방학일기 - Thmoon</td>
+                <td class="title-artist"><span class="music-title">여름방학일기</span><br/><span class="music-artist">Thmoon</span></td>
                 <td><img class="album-cover" src="../images/album-covers/thmoon.jpg"/></td>
                 <td class="lyrics">넘치는 마음을 전부 다 줄 수는 없지만<br/>마르지 않는 사랑을 남길게</td>
                 <td class="listen">
@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td class="title-artist">Castel - 너드커넥션</td>
+                <td class="title-artist"><span class="music-title">Castel</span><br/><span class="music-artist">너드커넥션</span></td>
                 <td><img class="album-cover" src="../images/album-covers/nerdconnection.jpg"/></td>
                 <td class="lyrics">오늘은 내가 예술가<br/>오늘밤은 나도 예술가</td>
                 <td class="listen">
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td class="title-artist">She - 잔나비</td>
+                <td class="title-artist"><span class="music-title">She</span><br/><span class="music-artist">잔나비</span></td>
                 <td><img class="album-cover" src="../images/album-covers/jannabi.jpg"/></td>
                 <td class="lyrics">"무지개가 떨어진 곳을 알아, 내일은 꼭 함께 가자"는 그녀<br/>내 손을 감싸쥐는 용감한 여전사여</td>
                 <td class="listen">
@@ -67,7 +67,7 @@
             
             <tr>
                 <td>4</td>
-                <td class="title-artist">보통의 연애 - 박소은</td>
+                <td class="title-artist"><span class="music-title">보통의 연애</span><br/><span class="music-artist">박소은</span></td>
                 <td><img class="album-cover" src="../images/album-covers/parksoeun.jpg"/></td>
                 <td class="lyrics">날 깎아내려도 돼 평생 원망해도 돼<br/>그렇게라도 계속 날 기억해 줄래</td>
                 <td class="listen">
@@ -78,7 +78,7 @@
             
             <tr>
                 <td>5</td>
-                <td class="title-artist">영원처럼 안아줘 (with. 카더가든) - 프롬</td>
+                <td class="title-artist"><span class="music-title">영원처럼 안아줘<br/>(with. 카더가든)</span><br/><span class="music-artist">프롬</span></td>
                 <td><img class="album-cover" src="../images/album-covers/fromm.jpg"/></td>
                 <td class="lyrics">엉키는 마음은 꿈에선 다 잊게<br/>영원처럼 안아줘</td>
                 <td class="listen">
@@ -90,18 +90,41 @@
     </div>
     
     <div class="section">
-        <h2 class="section-title">방명록</h2>
-        이름 : <input id="name-field" type="text"></input> <br/>
-        어떤 노래가 좋았나요 ? 🎵🎶 <br/>
-        <input type="checkbox" class="song">여름방학일기 - Thmoon</input> <br/>
-        <input type="checkbox" class="song">Castel - 너드커넥션</input> <br/>
-        <input type="checkbox" class="song">She - 잔나비</input> <br/>
-        <input type="checkbox" class="song">보통의 연애 - 박소은</input> <br/>
-        <input type="checkbox" class="song">영원처럼 안아줘 (with. 카더가든) - 프롬</input>
-        <br/>
-        <input type="button" value="등록" id="submitBtn"></button> 
-        <input type="reset" value="취소"></button> 
+        <h2 class="section-title">어떤 노래가 좋았나요 ?</h2>
         
+        <form>
+            <table class="music-vote">
+                <tr>
+                    <td><span><label for="song-1">여름방학일기 </label></span></td>
+                    <td><span><label for="song-2">Castel </label></span></td>
+                    <td><span><label for="song-3">She </label></span></td>
+                    <td><span><label for="song-4">보통의 연애 </label></span></td>
+                    <td><span><label for="song-5">영원처럼 안아줘 </label></span></td>
+                </tr>
+                <tr>
+                    <td><span class="music-artist"><label for="song-1">Thmoon</label></span></td>
+                    <td><span class="music-artist"><label for="song-2">너드커넥션</label></span></td>
+                    <td><span class="music-artist"><label for="song-3">잔나비</label></span></td>
+                    <td><span class="music-artist"><label for="song-4">박소은</label></span></td>
+                    <td><span class="music-artist"><label for="song-5">프롬</label></span></td>
+                </tr>
+                <tr>
+                    <td> <div class="vote-container"><input type="checkbox" class="vote" id="song-1"/> <label for="song-1"> </label></div></td>
+                    <td> <div class="vote-container"><input type="checkbox" class="vote" id="song-2"/> <label for="song-2"> </label></div></td>
+                    <td> <div class="vote-container"><input type="checkbox" class="vote" id="song-3"/> <label for="song-3"> </label></div></td>
+                    <td> <div class="vote-container"><input type="checkbox" class="vote" id="song-4"/> <label for="song-4"> </label></div></td>
+                    <td> <div class="vote-container"><input type="checkbox" class="vote" id="song-5"/> <label for="song-5"> </label></div></td>
+                </tr>
+            </table>
+            
+            <div class="name-field-container">이름 : <input id="name-field" type="text"></input></div>
+            
+            <div class="formBtns">
+                <input type="button" value="등록" id="submitBtn" class="formBtn"></button> 
+                <input type="reset" value="취소" class="formBtn"></button> 
+            </div>
+            
+        </form>
     </div>
     
 </body>

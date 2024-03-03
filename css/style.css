@@ -38,6 +38,18 @@ body {
     margin: auto;
 }
 
+.music-table th {
+    font-weight: 500;
+}
+
+.music-title {
+    font-size: 1.2em;
+}
+
+.music-artist {
+    color: gray;
+}
+
 .music-table * {
     text-align: center;
     line-height: 1.75;
@@ -78,15 +90,10 @@ body {
 
 #introduce {
 	display: flex;
-	width: max-content;
-	height: 300px;
 	line-height: 2.3em;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 8%;
-	justify-content: center;
+    padding-left: 5%;
+    margin: auto;
 	flex-direction: column;
-	overflow: hidden;
 }
 
 /* Prevent convert overflows, causing 꾸물꾸물 */
@@ -115,8 +122,91 @@ body {
     margin-right: 12.8px;
 }
 
-strong {
+#introduce > p > strong {
     background: linear-gradient(to right, #4D90FE, #8C39FF 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.music-vote {
+    margin: auto;
+    width: 100%;
+}
+
+.music-vote td {
+    width: 20%;
+    line-height: 2;
+    text-align: center;
+}
+
+.vote {
+    display: none;
+}
+
+.vote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vote + label {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .1s all;
+    cursor: pointer;
+}
+
+.vote + label:after {
+  content: "🙅🏻‍♂️";
+}
+
+.vote:checked + label:after {
+  content: "🙆🏻‍♂️";
+}
+
+.vote:checked + label {
+  transform: scale(1.3);
+}
+
+.vote:checked + label:hover {
+  transform: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+}
+
+.vote + label:hover {
+  transform: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+}
+
+.formBtn {
+    border: none;
+    font-size: 1.2em;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+}
+
+.formBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+}
+
+#name-field {
+    border: none;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 2em;
+    background-color: #e9e9e9;
+}
+
+.name-field-container {
+    text-align: center;
+    margin: 1em auto;
 }
