@@ -3,22 +3,23 @@
 <HTML>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css" />
     <title>안녕하세요 Woowacourse!</title>
 </head>
 
 <body>
 
     <div class="section">    
-        <h2>자기소개</h2>
-        <li>
-            <ul>이름: 아루 (이동훈)</ul>
-            <ul>좋아하는 음식: 초밥 🍣</ul>
-            <ul>안녕하세요 🤗</ul>
-        </li>
+        <h2 class="section-title">자기소개</h2>
+        <ul>
+            <li>이름: 아루 (이동훈)</li>
+            <li>좋아하는 음식: 초밥 🍣</li>
+            <li>안녕하세요 🤗</li>
+        </ul>
     </div>
     
     <div class="section">    
-        <h2>즐겨 듣는 노래</h2>
+        <h2 class="section-title">즐겨 듣는 노래</h2>
         <table>
             <tr>
                 <th>번호</th>
@@ -31,7 +32,7 @@
                 <td>1</td>
                 <td>여름방학일기 - Thmoon</td>
                 <td><img class="album-cover" src="../images/thmoon.jpg"/></td>
-                <td>넘치는 마음을 전부 다 줄 수는 없지만 / 마르지 않는 사랑을 남길게</td>
+                <td class="lyrics">넘치는 마음을 전부 다 줄 수는 없지만<br/>마르지 않는 사랑을 남길게</td>
                 <td>
                     <a href="https://open.spotify.com/track/3z5hyeCeUwTxYiDX67lVZE">Spotify</a><br/>
                     <a href="https://www.youtube.com/watch?v=S55tpnKO17s">M/V</a>
@@ -42,7 +43,7 @@
                 <td>2</td>
                 <td>Castel - 너드커넥션</td>
                 <td><img class="album-cover" src="../images/nerdconnection.jpg"/></td>
-                <td>오늘은 내가 예술가 / 오늘밤은 나도 예술가</td>
+                <td class="lyrics">오늘은 내가 예술가<br/>오늘밤은 나도 예술가</td>
                 <td>
                     <a href="https://open.spotify.com/track/5Q7cvIrK1LbiFrnFbqCRFM">Spotify</a><br/>
                     <a href="https://www.youtube.com/watch?v=YgWANQ5vOUI">M/V</a>
@@ -52,7 +53,7 @@
                 <td>3</td>
                 <td>She - 잔나비</td>
                 <td><img class="album-cover" src="../images/jannabi.jpg"/></td>
-                <td>"무지개가 떨어진 곳을 알아, 내일은 꼭 함께 가자"는 그녀 / 내 손을 감싸쥐는 용감한 여전사여</td>
+                <td class="lyrics">"무지개가 떨어진 곳을 알아, 내일은 꼭 함께 가자"는 그녀<br/>내 손을 감싸쥐는 용감한 여전사여</td>
                 <td>
                     <a href="https://open.spotify.com/track/57rt6Jj7woE21ae3Ml2vw8?si=d5aa45ce04584bcd">Spotify</a> <br/>
                     <a href="https://www.youtube.com/watch?v=UbSlWaerUIE">M/V</a>
@@ -63,10 +64,10 @@
                 <td>4</td>
                 <td>보통의 연애 - 박소은</td>
                 <td><img class="album-cover" src="../images/parksoeun.jpg"/></td>
-                <td>날 깎아내려도 돼 평생 원망해도 돼 / 그렇게라도 계속 날 기억해 줄래</td>
+                <td class="lyrics">날 깎아내려도 돼 평생 원망해도 돼<br/>그렇게라도 계속 날 기억해 줄래</td>
                 <td>
                     <a href="https://open.spotify.com/track/73a37NVjS5Is3rTciwcikd">Spotify</a><br/>
-                    <a href="https://www.youtube.com/watch?v=cAkIPVHcUoI">Youtube-배민라이브</a>
+                    <a href="https://www.youtube.com/watch?v=cAkIPVHcUoI">배민라이브</a>
                 </td>
             </tr>
             
@@ -74,7 +75,7 @@
                 <td>5</td>
                 <td>영원처럼 안아줘 (with. 카더가든) - 프롬</td>
                 <td><img class="album-cover" src="../images/fromm.jpg"/></td>
-                <td>엉키는 마음은 꿈에선 다 잊게 / 영원처럼 안아줘</td>
+                <td class="lyrics">엉키는 마음은 꿈에선 다 잊게<br/>영원처럼 안아줘</td>
                 <td>
                     <a href="https://open.spotify.com/track/3APExm2ck3E0pgERh17CB8">Spotify</a><br/>
                     <a href="https://www.youtube.com/watch?v=1C-y21sRN80">M/V</a>
@@ -84,7 +85,7 @@
     </div>
     
     <div class="section">
-        <h2>방명록</h2>
+        <h2 class="section-title">방명록</h2>
         이름 : <input class="name-field" type="text"></input> <br/>
         어떤 노래가 좋았나요 ? 🎵🎶 <br/>
         <input type="checkbox" name="song">여름방학일기 - Thmoon</input> <br/>
