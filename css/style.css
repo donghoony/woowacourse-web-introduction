@@ -1,14 +1,50 @@
+* {
+    font-family: Pretendard, 'Segoe UI Emoji', sans-serif;
+    padding: 0px;
+    margin: 0px;
+	cursor: url("../images/cursor.cur"), auto;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* disable dragging */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.section-title {
+    padding: 30px;
+    font-weight: 800;
+    font-size: 50px;
+    background: linear-gradient(to right, #757EFF, #F94BFF 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .section {
-    border: 1px solid;
-    margin: auto;
-    padding: 10px;
+    border: 2px dashed #ffdfdf;
+    margin: 3em auto;
+    padding: 20px;
     max-width: 900px;
     margin-bottom: 25px;
 }
 
-.section table * {
+.music-table {
+    margin: auto;
+}
+
+.music-table * {
     text-align: center;
     line-height: 1.75;
+}
+
+.music-number {
+    width: 5%;
 }
 
 .title-artist {
@@ -26,10 +62,6 @@
     width: 150px;
 }
 
-.section-title {
-    font-weight: 600;
-}
-
 .listen {
     width: 10%;
 }
@@ -42,4 +74,49 @@
 .youtube {
     content: url("../images/buttons/youtube.svg");
     width: 35px;
+}
+
+#introduce {
+	display: flex;
+	width: max-content;
+	height: 300px;
+	line-height: 2.3em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 8%;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* Prevent convert overflows, causing 꾸물꾸물 */
+#introduce > p {
+    max-height: 2.3em;
+} 
+
+#introduce > p:hover > .emoji {
+    transform: scale(1.5);
+}
+
+#introduce > p > strong {
+    transition: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+}
+
+#introduce > p:hover > strong {
+    font-size: 20px;
+}
+
+/* Fixing emoji with different width*/
+#introduce > p > .emoji {
+    transition: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    margin-right: 12.8px;
+}
+
+strong {
+    background: linear-gradient(to right, #4D90FE, #8C39FF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
